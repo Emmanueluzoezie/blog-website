@@ -1,0 +1,14 @@
+<article >
+    <h2>All Blogs Post</h2>
+    <% if(blogs.length > 0){ %>
+        <% blogs.forEach(blog => { %>
+                <div class="blog-content">
+                     <a href="/blogs/<%=blog.id%>" >
+                        <h2><%=blog.title %></h2>
+                        <p><%=blog.body %></p>
+                     </a>
+                </div>
+        <%})} else {%>
+            <p class="no-blog">There's no blog post, click <a href="/create">here</a> to post.</p>
+        <%}%>
+</article>

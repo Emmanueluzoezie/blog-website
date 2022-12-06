@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%-title%></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="create">
+        <%- include("./partial/nav.ejs")%>
+
+        <div class="form">
+            <h2>Post a Blog</h2>
+            <form action="/blogs" method="post">
+                <div>
+                    <label>Title</label>
+                    <input name="title" type="text"/>
+                </div>
+                <div>
+                    <label>Content header</label>
+                    <input name="content" type="text"/>
+                </div>
+                <div>
+                    <label>Content Body</label>
+                    <textarea name="body"></textarea>
+                </div>
+                <div class="button">
+                    <button>Post content</button>
+                </div>
+            </form>
+        </div>
+
+        <%- include("./partial/footer.ejs")%>
+    </div>
+</body>
+</html>

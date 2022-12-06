@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(208, 220, 231);
+}
+
+.home, .about, .not-found, .create, .detials{ position: relative; height: 100vh; width: 100%;}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid gray;
+}
+
+nav > h1{
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav > h1:hover{
+    color: rgb(32, 159, 218);
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    padding: 5px 10px;
+    margin: 0px 4px;
+    /* border: 2px solid red; */
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    font-size: 16px;
+}
+
+a > li:hover{
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 4px;
+}
+
+li{
+    list-style: none;
+}
+
+article{
+    margin-top: 30px;
+    padding: 20px 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+article > h2{
+    text-align: center;
+    margin: 7px 0px;
+}
+
+.blog-content{
+    padding: 13px;
+    margin: 14px 0px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.blog-content:hover{
+    background-color: rgb(247, 248, 248);
+}
+
+.blog-content > a > h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    font-size: 1.3em;
+}
+
+.blog-content > a > p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.no-blog{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.no-blog > a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: blue ;
+}
+
+.no-blog > a:hover {
+    text-decoration: underline;
+}
+
+.about-blog{
+    padding: 50px;
+    margin: 14px 0px;
+}
+
+.about-blog > h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-blog> p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.content {
+    padding: 13px;
+    margin: 14px 0px;
+    cursor: pointer;
+    border-radius: 7px;
+    position: relative;
+}
+
+.content > h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content > h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+
+.content > p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.content > button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.form{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 2rem;
+width: 100%;
+}
+
+.form > h2{
+margin: 10px 0px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form{
+  width: 500px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+form > div >label{
+  width: 100%; 
+  display: block; 
+  font-size: 18px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  margin-left: 10px;
+  color: rgb(154, 154, 154);
+}
+
+form > div >input{
+  width: 100%; 
+  display: block; 
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 17px;
+  outline: none;
+  border: none;
+}
+
+form > div >textarea{
+  width: 100%; 
+  min-height: 200px;
+  display: block; 
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button > button{
+  border-radius: 10px;
+  padding: 8px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: rgba(109, 58, 238, 0.771);
+  font-weight: 700;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button > button:hover{
+  background-color: rgba(74, 74, 234, 0.771);
+}
+
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    .about-blog{
+        padding: 15px;
+    }
+    .content > button{
+    font-weight: 600;
+    font-size: 17px;
+    padding: 6px 10px;
+}
+    .form{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    form{
+        width: 100%; 
+        padding: 0px 25px; 
+    }
+
+    footer > h2{
+        font-size: 17px;
+    }
+}
