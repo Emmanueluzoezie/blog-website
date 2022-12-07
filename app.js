@@ -4,15 +4,16 @@ const port = 3000
 const path = require('path')
 const mongoose = require("mongoose")
 const Blog = require("./model/blog")
-const { throws } = require("assert")
 
 app.set('views', path.join(__dirname, 'views'))
 app.set("view engine", "ejs");
 app.use(express.static("public"))
 app.use(express.urlencoded({ extended: true }))
 
+//mongoDB 
 const dbURI = "mongodb+srv://blogwebsite:A65Lv3otIwek1KY3@cluster0.h6aqts0.mongodb.net/blog-col?retryWrites=true"
 
+//connecting mongoose to mongoBD 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true})
 .then(() => app.listen(port))
 .catch((err) => console.log(err))
