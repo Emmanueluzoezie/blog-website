@@ -10,8 +10,6 @@ app.set("view engine", "ejs");
 app.use(express.static("public"))
 app.use(express.urlencoded({ extended: true }))
 
-//mongoDB 
-const dbURI = "mongodb+srv://blogwebsite:A65Lv3otIwek1KY3@cluster0.h6aqts0.mongodb.net/blog-col?retryWrites=true"
 
 //connecting mongoose to mongoBD 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true})
